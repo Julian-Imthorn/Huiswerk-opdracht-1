@@ -114,7 +114,9 @@
                 het
                 schoolcurriculum."
             </blockquote>
-            <!-- Ben er nog niet wijzer geworden waarom de onderste lijn code niet mee wilt werken om het voorbeeld te volgen. -->
+            <!-- Ben er nog niet wijzer geworden waarom de onderste lijn code niet mee wilt werken om het voorbeeld te volgen.
+             ik mis de indent aan het begin en ik wil niet de standaard spatie code daarvoor gebruiken -->
+
             <author>—Nova Eeken, <em>Hogeschool</em> NOVI</author>
         </article>
     </section>
@@ -275,12 +277,12 @@ print(fibonacci(10))</pre>
                 moet programmeren. Schokkend!</p>
             <!-- moeilijk om te zien of dit center is in de HTML opmaak van NOVI. Ik weet dat center niet meer gebruikt wordt omdat we hiervoor CSS toepassen-->
             <figure>
-                <center>
-                    <video controls poster="assets/placeholder_video.png">
-                        <source src="assets/multimedia_preview_edhub.mov" type="video/mp4">
-                        <samp>Your browser does not support the video tag.</samp>
-                    </video>
-                </center>
+
+                <video controls poster="assets/placeholder_video.png">
+                    <source src="assets/multimedia_preview_edhub.mov" type="video/mp4">
+                    <samp>Your browser does not support the video tag.</samp>
+                </video>
+
                 <figcaption><strong>Figuur 4:</strong> Video-illustratie van multimedia op EdHub uit de cursus
                     JavaScript
                 </figcaption>
@@ -295,13 +297,67 @@ print(fibonacci(10))</pre>
 
         Het is van cruciaal belang dat onderwijsinstellingen effectieve instructieontwerpen ontwikkelen om deze
         educatieve uitkomsten te optimaliseren en studenten voor te bereiden op de uitdagingen van de toekomst. Gelukkig
-        is de IT-opleider NOVI Hogeschool daar al sinds 1958 druk mee bezig. Heb jij je al ingeschreven voor een
+        is de IT-opleider NOVI Hogeschool daar al sinds 1958 druk mee bezig. Heb <strong>jij</strong> je al ingeschreven
+        voor een
         IT-opleiding bij NOVI?
-
-        Bedankt voor het lezen van dit artikel. Laat ons weten wat je ervan vond!
     </section>
+    <br>
+    <footer>
 
+        <strong>Bedankt voor het lezen van dit artikel. Laat ons weten wat je ervan vond!</strong>
+        <br>
+        <br>
+        <section>
+            <fieldset>
+                <legend>Gegevens</legend>
 
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" required minlength="4" maxlength="10" size="15"/>
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required size="15"/>
+
+            </fieldset>
+        </section>
+        <br>
+        <section>
+            <fieldset>
+                <legend>Jouw review</legend>
+
+                Hoe heb je dit artikel gevonden?<label for="article-found"></label>
+                <select name="options" id="article-found">
+                    <option value="">--Anders--</option>
+                    <option value="Google">Google</option>
+                    <option value="Vriend">Vriend</option>
+                    <option value="Advertentie">Advertentie</option>
+                    <option value="Anders">Anders</option>
+                </select>
+                <br>
+                <br>
+                Zou je meer van dit soort artikelen willen zien?
+                <br>
+                <br>
+                <input type=radio id="nee"/>
+                <label for="nee">Nee</label>
+
+                <input type="radio" id="ja">
+                <label for="ja">Ja</label>
+
+                <input type="radio" id="misschien">
+                <label for="misschien">Misschien</label>
+
+                <header>Opmerkingen</header>
+                <form>
+                <input placeholder="Wat vondt je van dit artikel?">
+
+                Schrijf me in voor de nieuwsbrief
+
+            </fieldset>
+            </form>
+
+        </section>
+    </footer>
 </main>
 </body>
 </html>
